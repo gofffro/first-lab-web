@@ -282,100 +282,6 @@ button {
   height: 28.26px;
 }
 
-.featured {
-  display: flex;
-  align-items: flex-start;
-  width: min(100%, 1130.5px);
-  min-height: 433.36px;
-  margin: 0 auto;
-  padding: 84px 109.91px;
-  background: #ffffff;
-}
-
-.featured__image-column,
-.featured__content {
-  min-width: 0;
-  flex: 1 1 0;
-}
-
-.featured__image-column {
-  padding-right: 31.4px;
-}
-
-.featured__image {
-  display: block;
-  width: 100%;
-  height: 265.35px;
-  border-radius: 6.28px;
-  object-fit: cover;
-}
-
-.featured__content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 18.84px;
-  padding: 23.55px;
-}
-
-.featured__copy {
-  display: flex;
-  flex-direction: column;
-  gap: 6.28px;
-  width: 100%;
-}
-
-.featured__eyebrow {
-  margin: 0;
-  color: #8a53ff;
-  font-size: 14.13px;
-  font-weight: 700;
-  line-height: 17px;
-  letter-spacing: 0.85px;
-  text-transform: uppercase;
-}
-
-.featured__title {
-  margin: 0;
-  color: #434343;
-  font-family: 'Changa One', Arial, sans-serif;
-  font-size: 30.62px;
-  font-weight: 400;
-  line-height: 28.26px;
-}
-
-.featured__description {
-  margin: 0;
-  color: #434343;
-  font-size: 14.13px;
-  line-height: 25.91px;
-}
-
-.featured__link {
-  display: inline-flex;
-  align-items: center;
-  gap: 9.42px;
-  color: #8a53ff;
-  font-size: 12.56px;
-  line-height: 28.26px;
-  text-decoration: none;
-}
-
-.featured__play-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 28.26px;
-  height: 28.26px;
-  flex: 0 0 auto;
-}
-
-.featured__play-icon img {
-  display: block;
-  width: 28.26px;
-  height: 28.26px;
-}
-
 @media (max-width: 768px) {
   .hero {
     min-height: 500px;
@@ -405,26 +311,6 @@ button {
   .hero__background img {
     object-position: 64% center;
   }
-
-  .featured {
-    display: block;
-    min-height: 0;
-    padding: 56px 20px 64px;
-  }
-
-  .featured__image-column {
-    padding-right: 0;
-  }
-
-  .featured__image {
-    height: auto;
-    aspect-ratio: 1.6;
-  }
-
-  .featured__content {
-    gap: 18.84px;
-    padding: 24px 0 0;
-  }
 }
 
 @media (max-width: 360px) {
@@ -444,11 +330,6 @@ button {
 
   .hero__video-link {
     gap: 6px;
-  }
-
-  .featured {
-    padding-right: 16px;
-    padding-left: 16px;
   }
 }
 
