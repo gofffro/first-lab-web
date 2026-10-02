@@ -3,92 +3,212 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travel stories, photography and adventures from the Talking Travel community.">
     <title>Talking Travel</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body id="home">
     <header class="site-header">
-      <div class="site-header__inner">
-        <a class="logo" href="index.html" aria-label="Talking Travel home">
-          <span class="logo__script">Talking</span>
-          <span class="logo__travel">Travel</span>
+      <div class="container header-inner">
+        <a class="logo" href="#home" aria-label="Talking Travel home">
+          <img src="assets/travel/logo.svg" alt="Talking Travel" width="100" height="64">
         </a>
-
-        <div class="header-menu">
-          <nav class="main-nav" aria-label="Main navigation">
-            <ul class="main-nav__list">
-              <li><a class="main-nav__link main-nav__link--active" href="index.html">Home</a></li>
-              <li><a class="main-nav__link" href="#story">Story</a></li>
-              <li><a class="main-nav__link" href="#gallery">Gallery</a></li>
-              <li><a class="main-nav__link" href="#contact">Contact Us</a></li>
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a class="active" href="#home" aria-current="page">Home</a></li>
+            <li><a href="story.html">Story</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+        <details class="mobile-menu">
+          <summary aria-label="Navigation menu"><img src="assets/travel/menu.svg" alt=""></summary>
+          <nav aria-label="Mobile navigation">
+            <ul class="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="story.html">Story</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact Us</a></li>
             </ul>
           </nav>
-
-          <button class="menu-button" type="button" aria-label="Open navigation menu">
-            <img src="assets/icons/hamburger.svg" alt="">
-          </button>
-
-          <span class="header-menu__divider" aria-hidden="true">
-            <img src="assets/icons/divider.svg" alt="">
-          </span>
-
-          <button class="icon-button" type="button" aria-label="Search">
-            <img src="assets/icons/search.svg" alt="">
-          </button>
-
-          <button class="icon-button icon-button--profile" type="button" aria-label="Open profile">
-            <img src="assets/icons/profile.svg" alt="">
-          </button>
+        </details>
+        <div class="header-actions">
+          <a href="#stories" aria-label="Find travel stories"><img src="assets/travel/search.svg" alt=""></a>
+          <a href="#contact" aria-label="Join our community"><img src="assets/travel/profile.svg" alt=""></a>
         </div>
       </div>
     </header>
 
     <main>
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero__background" aria-hidden="true">
-          <img src="assets/hero-background.png" alt="">
-        </div>
-
-        <div class="hero__content">
-          <div class="hero__texts">
-            <h1 class="hero__title" id="hero-title">
-              <span class="hero__title-accent">Let’s talk</span> about your next trip!
-            </h1>
-            <p class="hero__description">Share your favorite travel destination and we will feature it in our next blog!</p>
-          </div>
-
-          <div class="hero__actions">
-            <a class="hero__primary-button" href="#story">Share your story</a>
-            <a class="hero__video-link" href="#highlights">
-              <span class="hero__play-icon">
-                <img src="assets/icons/play.svg" alt="">
-              </span>
-              <span>Watch highlights</span>
-            </a>
+        <div class="container narrow-container">
+          <div class="hero-content">
+            <h1 id="hero-title"><span>Let’s talk</span> about your next trip!</h1>
+            <p>Share your favorite travel destination and we will feature it in our next blog!</p>
+            <div class="hero-actions">
+              <a class="button" href="#contact">Share your story</a>
+              <a class="video-link" href="#stories"><img src="assets/travel/play-light.svg" alt="">Watch highlights</a>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="featured" id="story" aria-labelledby="featured-title">
-        <div class="featured__image-column">
-          <img class="featured__image" src="assets/featured-image.png" alt="Traveller standing in front of a snowy mountain">
-        </div>
-
-        <div class="featured__content">
-          <div class="featured__copy">
-            <p class="featured__eyebrow">Featured destination</p>
-            <h2 class="featured__title" id="featured-title">Our swiss adventure blog</h2>
-            <p class="featured__description">Visiting the swiss alps? Want to know the requirements on travelling to Switzerland during the pandemic? Our blog might help!</p>
+      <section class="featured" aria-labelledby="featured-title">
+        <div class="container narrow-container featured-grid">
+          <div class="featured-image">
+            <img src="assets/travel/switzerland.png" alt="A traveller facing the snow-covered Matterhorn" width="540" height="338">
           </div>
+          <div class="featured-content">
+            <p class="eyebrow">Featured destination</p>
+            <h2 id="featured-title">Our swiss adventure blog</h2>
+            <p class="featured-description">Visiting the swiss alps? Want to know the requirements on travelling to Switzerland during the pandemic? Our blog might help!</p>
+            <a class="video-link accent-link" href="story.html"><img src="assets/travel/play.svg" alt="">Watch Now</a>
+          </div>
+        </div>
+      </section>
 
-          <a class="featured__link" href="#highlights">
-            <span class="featured__play-icon">
-              <img src="assets/icons/featured-play.svg" alt="">
-            </span>
-            <span>Watch Now</span>
-          </a>
+      <section class="destinations" id="gallery" aria-labelledby="destinations-title">
+        <div class="container">
+          <header class="section-heading">
+            <p class="eyebrow">Join our adventures</p>
+            <h2 id="destinations-title">Discover the world with us</h2>
+          </header>
+          <ul class="destination-grid">
+            <li>
+              <article class="destination-card">
+                <img src="assets/travel/iceland.png" alt="Glacial rivers flowing across an Icelandic landscape" width="269" height="317" loading="lazy">
+                <h3>Iceland</h3>
+                <a href="#contact" aria-label="Discover Iceland">Discover</a>
+              </article>
+            </li>
+            <li>
+              <article class="destination-card">
+                <img src="assets/travel/italy.png" alt="Rolling hills and cypress trees in Italy" width="269" height="317" loading="lazy">
+                <h3>Italy</h3>
+                <a href="#tuscany" aria-label="Discover Italy">Discover</a>
+              </article>
+            </li>
+            <li>
+              <article class="destination-card">
+                <img src="assets/travel/dubai.png" alt="Dubai skyline with the Burj Khalifa" width="269" height="317" loading="lazy">
+                <h3>Dubai</h3>
+                <a href="#contact" aria-label="Discover Dubai">Discover</a>
+              </article>
+            </li>
+            <li>
+              <article class="destination-card">
+                <img src="assets/travel/patagonia.png" alt="A blue lake beneath the snowy peaks of Patagonia" width="269" height="317" loading="lazy">
+                <h3>Patagonia</h3>
+                <a href="#contact" aria-label="Discover Patagonia">Discover</a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="community" id="contact" aria-labelledby="community-title">
+        <div class="community-inner">
+          <header class="section-heading">
+            <p class="eyebrow">Let’s build a community</p>
+            <h2 id="community-title">Join our next destination</h2>
+          </header>
+          <form class="travel-form" action="#contact" method="get">
+            <div class="form-heading">
+              <h3>Share your travels</h3>
+              <p>Suggest a new travel destination that you want to see and we will feature it in our blog.</p>
+            </div>
+            <div class="form-fields">
+              <label class="visually-hidden" for="destination">Destination name</label>
+              <input id="destination" name="destination" type="text" placeholder="Destination name" required>
+              <label class="visually-hidden" for="country">Country of Destination</label>
+              <select id="country" name="country" required>
+                <option value="" disabled selected>Country of Destination</option>
+                <option>Iceland</option>
+                <option>Italy</option>
+                <option>United Arab Emirates</option>
+                <option>Argentina</option>
+                <option>Chile</option>
+                <option>Switzerland</option>
+                <option>Japan</option>
+                <option>Norway</option>
+                <option>Other</option>
+              </select>
+              <label class="visually-hidden" for="traveller-name">Your name</label>
+              <input id="traveller-name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+              <label class="visually-hidden" for="category">Shooting category</label>
+              <select id="category" name="category" required>
+                <option value="" disabled selected>Shooting category</option>
+                <option>Landscape</option>
+                <option>Architecture</option>
+                <option>Portrait</option>
+                <option>Wildlife</option>
+                <option>Other</option>
+              </select>
+              <label class="visually-hidden" for="description">Describe what kind of photos you want to focus on</label>
+              <textarea id="description" name="description" placeholder="Describe what kind of photos you want to focus on" rows="3"></textarea>
+            </div>
+            <button class="button" type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="stories" id="stories" aria-labelledby="stories-title">
+        <div class="container">
+          <header class="section-heading">
+            <p class="eyebrow">Catch up to our posts</p>
+            <h2 id="stories-title">Recent story entries</h2>
+          </header>
+          <div class="stories-grid">
+            <article class="main-story" id="zermatt">
+              <img class="main-story-image" src="assets/travel/zermatt.png" alt="The sunlit Matterhorn above Zermatt" width="560" height="358" loading="lazy">
+              <div class="main-story-body">
+                <div>
+                  <h3>Zermatt, Switzerland</h3>
+                  <p>Marvel on the beauty of the iconic Matterhorn. Find the best places to stay that has the best views of this peak...</p>
+                </div>
+                <a class="story-play" href="story.html" aria-label="Explore Zermatt"><img src="assets/travel/story-play.svg" alt=""></a>
+              </div>
+            </article>
+            <div class="story-list">
+              <article class="story-card" id="tuscany">
+                <img src="assets/travel/tuscany.png" alt="Green hills in Tuscany" width="200" height="128" loading="lazy">
+                <div>
+                  <h3>Tuscany, Italy</h3>
+                  <p>The amazing Tuscany is home to famous Renaissance art and architecture and a vast scenic landscape. <a href="#contact">view full blog...</a></p>
+                </div>
+              </article>
+              <article class="story-card" id="kyoto">
+                <img src="assets/travel/kyoto.png" alt="A traditional street in Kyoto at dusk" width="200" height="128" loading="lazy">
+                <div>
+                  <h3>Kyoto, Japan</h3>
+                  <p>Kyoto is well known for its temples, gardens, Shinto shrines and wooden houses. It’s time to visit tokyo. <a href="#contact">view full blog...</a></p>
+                </div>
+              </article>
+              <article class="story-card" id="lofoten">
+                <img src="assets/travel/lofoten.png" alt="Red houses beside snowy mountains in the Lofoten Islands" width="200" height="128" loading="lazy">
+                <div>
+                  <h3>Lofoten Islands, Norway</h3>
+                  <p>Featuring razor-sharp peaks housing the arctic landscape. This astonishing island is perfect for your next postcard. <a href="#contact">view full blog...</a></p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2022, Talking Travel. All Rights Reserved.</p>
+        <nav aria-label="Footer navigation">
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="story.html">Blog</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
