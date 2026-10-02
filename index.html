@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
   <head>
@@ -36,9 +37,54 @@
           <a href="#stories" aria-label="Find travel stories"><img src="assets/travel/search.svg" alt=""></a>
           <a href="#contact" aria-label="Join our community"><img src="assets/travel/profile.svg" alt=""></a>
         </div>
-      </div>
-    </header>
+=======
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Talking Travel — сообщество путешественников</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="./index.html">
+        <span class="logo__script">Talking</span>
+        <span class="logo__bold">Travel</span>
+      </a>
 
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="./index.html" aria-current="page">Home</a></li>
+          <li><a class="site-nav__link" href="#story">Story</a></li>
+          <li><a class="site-nav__link" href="#gallery">Gallery</a></li>
+          <li><a class="site-nav__link" href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <button class="icon-button" type="button" aria-label="Поиск">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+            <path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <button class="icon-button" type="button" aria-label="Профиль">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/>
+            <path d="M4 21c0-4 4-6 8-6s8 2 8 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+>>>>>>> 144e3fc39794387bf8c9df3474dcb271ab37d3b1
+      </div>
+    </div>
+  </header>
+
+<<<<<<< HEAD
     <main>
       <section class="hero" aria-labelledby="hero-title">
         <div class="container narrow-container">
@@ -212,3 +258,145 @@
     </footer>
   </body>
 </html>
+=======
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <h1 id="hero-title" class="hero__title">
+          Let’s talk <span class="accent">about</span><br>your next trip!
+        </h1>
+        <p class="hero__text">
+          Share your favorite travel destination and we will feature it in our next blog!
+        </p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#join">Share your story</a>
+          <a class="button button--ghost" href="#featured">
+            <span class="icon-play" aria-hidden="true"></span>
+            Watch highlights
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED -->
+    <section class="featured" id="featured" aria-labelledby="featured-title">
+      <div class="container featured__inner">
+        <img class="featured__image" src="./img/swiss.jpg" alt="Путешественник на фоне Маттерхорна" width="560" height="400" loading="lazy">
+        <div class="featured__content">
+          <p class="eyebrow">Featured Destination</p>
+          <h2 id="featured-title">Our swiss adventure blog</h2>
+          <p class="featured__text">
+            Visiting the swiss alps? Want to know the requirements on travelling to
+            Switzerland during the pandemic? Our blog might help!
+          </p>
+          <a class="button button--link" href="./blog.html">
+            <span class="icon-play" aria-hidden="true"></span>
+            Watch Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTINATIONS -->
+    <section class="destinations" id="gallery" aria-labelledby="destinations-title">
+      <div class="container">
+        <h2 id="destinations-title" class="section-title">Discover the world with us</h2>
+        <ul class="destination-grid">
+          <li>
+            <article class="destination-card">
+              <img src="./img/iceland.jpg" alt="Пейзаж Исландии" width="320" height="240" loading="lazy">
+              <h3 class="destination-card__title">Iceland</h3>
+              <a class="button button--ghost" href="./blog.html#iceland">Discover</a>
+            </article>
+          </li>
+          <li>
+            <article class="destination-card">
+              <img src="./img/italy.jpg" alt="Улочка в Италии" width="320" height="240" loading="lazy">
+              <h3 class="destination-card__title">Italy</h3>
+              <a class="button button--ghost" href="./blog.html#italy">Discover</a>
+            </article>
+          </li>
+          <li>
+            <article class="destination-card">
+              <img src="./img/dubai.jpg" alt="Скайлайн Дубая" width="320" height="240" loading="lazy">
+              <h3 class="destination-card__title">Dubai</h3>
+              <a class="button button--ghost" href="./blog.html#dubai">Discover</a>
+            </article>
+          </li>
+          <li>
+            <article class="destination-card">
+              <img src="./img/patagonia.jpg" alt="Горы Патагонии" width="320" height="240" loading="lazy">
+              <h3 class="destination-card__title">Patagonia</h3>
+              <a class="button button--ghost" href="./blog.html#patagonia">Discover</a>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- JOIN FORM -->
+    <section class="join-form" id="join" aria-labelledby="join-title">
+      <div class="container join-form__inner">
+        <h2 id="join-title" class="section-title">Join our next destination</h2>
+        <p class="join-form__subtitle">The upcoming destination</p>
+        <form class="join-form__form" action="#" method="post">
+          <label class="visually-hidden" for="join-name">Имя</label>
+          <input id="join-name" name="name" type="text" placeholder="Your name" required>
+
+          <label class="visually-hidden" for="join-email">Email</label>
+          <input id="join-email" name="email" type="email" placeholder="you@example.com" required>
+
+          <button class="button button--primary" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- RECENT STORY -->
+    <section class="recent" id="story" aria-labelledby="recent-title">
+      <div class="container">
+        <h2 id="recent-title" class="section-title">Recent story writing</h2>
+        <ul class="recent-grid">
+          <li class="recent-grid__large">
+            <article class="story-card story-card--large">
+              <img src="./img/story-1.jpg" alt="Горный пейзаж" width="640" height="360" loading="lazy">
+              <h3 class="story-card__title">Hello Switzerland!</h3>
+              <p class="story-card__excerpt">Одна из лучших стран, где мы побывали.</p>
+              <time class="story-card__date" datetime="2026-04-12">12 апреля 2026</time>
+            </article>
+          </li>
+          <li>
+            <article class="story-card">
+              <img src="./img/story-2.jpg" alt="Дорога в горах" width="320" height="240" loading="lazy">
+              <h3 class="story-card__title">Mountain roads</h3>
+              <time class="story-card__date" datetime="2026-03-28">28 марта 2026</time>
+            </article>
+          </li>
+          <li>
+            <article class="story-card">
+              <img src="./img/story-3.jpg" alt="Закат в горах" width="320" height="240" loading="lazy">
+              <h3 class="story-card__title">Switzerland sunset</h3>
+              <time class="story-card__date" datetime="2026-03-02">2 марта 2026</time>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container site-footer__inner">
+      <nav aria-label="Навигация в подвале">
+        <ul class="site-footer__list">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#story">Story</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <p class="site-footer__copy">© 2026 Talking Travel</p>
+    </div>
+  </footer>
+</body>
+</html>
+>>>>>>> 144e3fc39794387bf8c9df3474dcb271ab37d3b1

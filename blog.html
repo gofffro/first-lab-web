@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Switzerland! — Talking Travel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="./index.html">
+        <span class="logo__script">Talking</span>
+        <span class="logo__bold">Travel</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="./index.html">Home</a></li>
+          <li><a class="site-nav__link" href="./index.html#story">Story</a></li>
+          <li><a class="site-nav__link" href="./index.html#gallery">Gallery</a></li>
+          <li><a class="site-nav__link" href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <button class="icon-button" type="button" aria-label="Поиск">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+            <path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <button class="icon-button" type="button" aria-label="Профиль">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/>
+            <path d="M4 21c0-4 4-6 8-6s8 2 8 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="article">
+      <header class="article__header">
+        <div class="container article__container">
+          <h1 class="article__title">Hello Switzerland!</h1>
+          <div class="article__meta">
+            <span class="article__author">By Alex Carter</span>
+            <time datetime="2026-04-12">12 апреля 2026</time>
+          </div>
+          <img class="article__cover" src="./img/article-cover.jpg" alt="Заснеженные Альпы на закате" width="1200" height="675">
+          <a class="article__video" href="#">
+            <span class="icon-play" aria-hidden="true"></span>
+            Watch the story
+          </a>
+        </div>
+      </header>
+
+      <section class="article__body" aria-labelledby="story-title">
+        <div class="container article__container">
+          <h2 id="story-title">My Swiss adventure story</h2>
+          <p>
+            Switzerland is a country of contrasts: snowy peaks, green valleys,
+            turquoise lakes and tiny villages. We drove through the Alps for two
+            weeks and every day felt like a new postcard.
+          </p>
+          <p>
+            The roads are perfectly maintained, the mountain passes open in late
+            spring, and the trains run like clockwork. Even in summer you should
+            pack a warm jacket — the weather changes in minutes.
+          </p>
+        </div>
+      </section>
+
+      <blockquote class="blockquote">
+        <div class="container article__container">
+          <p>«One of the best countries we have driven so far.»</p>
+          <a class="button button--primary" href="#">Watch Now</a>
+        </div>
+      </blockquote>
+
+      <section class="adventure" aria-labelledby="adventure-title">
+        <div class="container article__container">
+          <h2 id="adventure-title">Adventure</h2>
+          <div class="adventure__gallery">
+            <img src="./img/adventure-1.jpg" alt="Дорога через перевал" width="400" height="300" loading="lazy">
+            <img src="./img/adventure-2.jpg" alt="Деревянный шале" width="400" height="300" loading="lazy">
+            <img src="./img/adventure-3.jpg" alt="Озеро в горах" width="400" height="300" loading="lazy">
+          </div>
+          <p>
+            Мы прошли несколько треков разной сложности, заночевали в деревянных
+            шале и попробовали местный сыр прямо на ферме. Если планируете поездку —
+            обязательно оставьте пару дней на спонтанные остановки.
+          </p>
+        </div>
+      </section>
+    </article>
+
+    <section class="join-form" id="join" aria-labelledby="join-title">
+      <div class="container join-form__inner">
+        <h2 id="join-title" class="section-title">Join our next destination</h2>
+        <p class="join-form__subtitle">The upcoming destination</p>
+        <form class="join-form__form" action="#" method="post">
+          <label class="visually-hidden" for="join-name">Имя</label>
+          <input id="join-name" name="name" type="text" placeholder="Your name" required>
+
+          <label class="visually-hidden" for="join-email">Email</label>
+          <input id="join-email" name="email" type="email" placeholder="you@example.com" required>
+
+          <button class="button button--primary" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container site-footer__inner">
+      <nav aria-label="Навигация в подвале">
+        <ul class="site-footer__list">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html#story">Story</a></li>
+          <li><a href="./index.html#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <p class="site-footer__copy">© 2026 Talking Travel</p>
+    </div>
+  </footer>
+</body>
+</html>
