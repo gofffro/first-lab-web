@@ -1,7 +1,4 @@
 # Talking Travel
-
-Декомпозиция обновлена: пользователь выбрал полную страницу Home Page на странице Get Started в Figma и первую страницу PDF вместо уменьшенной копии на Cover. Пользователь также заменил требование SCSS на обычный CSS и попросил выполнить всю страницу за один этап.
-
 Исходный макет: https://www.figma.com/design/n1nSQGeq3fHzbsV6HGbBc8/Locofy-Sample-Project---Talking-Travel--Community-?node-id=1-2
 
 ```text
